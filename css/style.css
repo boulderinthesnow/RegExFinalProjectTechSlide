@@ -62,10 +62,13 @@ h2 a {
   display: flex;
   align-items: center;
   justify-content: center;
+
+
 }
 
 div.page {
   /*opacity: .95;*/
+
   margin-top: 30px;
   padding: 10px;
   /*background-color: blue;*/
@@ -78,6 +81,7 @@ div.page {
   font-weight: 300;
   font-size: 1.75vw;
   border-radius: 10px;
+  
 }
 
 div.on-top {
@@ -170,4 +174,5 @@ div.center {
     transform: none;
   }
 }
+
 
