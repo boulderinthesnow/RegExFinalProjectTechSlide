@@ -1,6 +1,7 @@
 var app = angular.module("ProfileApp", ['ngRoute']);
-app.config(['$routeProvider', '$httpProvider',  function($routeProvider, $httpProvider) {
+app.config(['$routeProvider', '$httpProvider', '$locationProvider',  function($routeProvider, $httpProvider, $locationProvider) {
     // $httpProvider.defaults.withCredentials = true;
+    $locationProvider.html5Mode(true);
     $routeProvider
       .when('/', {
         templateUrl: '/partials/home.html',
