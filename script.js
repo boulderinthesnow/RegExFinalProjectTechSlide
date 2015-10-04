@@ -1,3 +1,4 @@
+console.log("foo")
 // $(document).ready(function() {
 // 	  var background = {}
 	  
