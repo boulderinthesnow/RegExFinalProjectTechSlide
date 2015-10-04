@@ -7,16 +7,20 @@ app.controller('ProfileController', ["$scope", "$location", "$routeParams", "$ro
 }])
 
 app.controller('IndexController', ["$scope", "$location", "$routeParams", "$route", "$timeout", function($scope, $location, $routeParams, $route, $timeout){
-  $scope.changeView = function (view) {
-     $('.container').addClass('fadeOutUp')
-     
-     $timeout(function(){
-        $location.path(view)
-     },500)
-  } // END FUNCTION
 
-  // BUBBLES!! BUBBLES!! BUBBLES!! BUBBLES!!
    $(document).ready(function() {
+    $('.container').css("opacity","0")
+
+    $('#button').click(function(){
+      console.log("foo")
+      $('.container').addClass("fadeInUp")
+      $('#button').addClass("fadeOutUp")
+    })
+
+    // $('#button').addClass("fadeInUp")
+
+
+    // BUBBLES!! BUBBLES!! BUBBLES!! BUBBLES!!
       var background = {}
       
       background.initializr = function (){

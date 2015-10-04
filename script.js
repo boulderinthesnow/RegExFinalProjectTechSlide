@@ -1,4 +1,4 @@
-console.log("foo")
+// console.log("foo")
 // $(document).ready(function() {
 // 	  var background = {}
 	  
