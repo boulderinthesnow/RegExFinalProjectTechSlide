@@ -11,11 +11,19 @@ app.controller('IndexController', ["$scope", "$location", "$routeParams", "$rout
    $(document).ready(function() {
     $('.container').css("opacity","0")
 
-    $('#button').click(function(){
-      console.log("foo")
-      $('.container').addClass("fadeInUp")
-      $('#button').addClass("fadeOutUp")
-    })
+    // $('#button').click(function(){
+    //   console.log("foo")
+    //   $('.container').addClass("fadeInUp")
+    //   $('#button').addClass("fadeOutUp")
+    // })
+
+    $(document).keypress(function(e) {
+      console.log(e)
+        if(e.which >= 0) {
+            $('.container').addClass("fadeInUp")
+            $('#button').addClass("fadeOutUp")
+        }
+    });
 
     // $('#button').addClass("fadeInUp")
 
